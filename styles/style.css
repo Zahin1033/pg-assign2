@@ -1,0 +1,40 @@
+*{
+    margin: 0 auto;
+}
+/* shared styles */
+.bg-clr{
+    background-color: #f5f8ff;
+}
+
+/* header styles */
+.header{
+    
+    /* padding: 30px 150px 120px; */
+   
+}
+.header-body{
+    display: flex;
+    margin: 30px 150px 120px;
+     justify-content: space-around;
+    align-items: center;
+}
+.header ul{
+    display: flex;
+}
+.header ul li{
+    
+    list-style: none;
+}
+.header ul li a{
+    text-decoration: none;
+    margin-right: 48px;
+}
+.nav-links4{
+    display: grid;
+    grid-template-columns: repeat(1,2fr);
+}
+.cart-img{
+    width: 24px;
+    height: 24px;
+    width: 100%;
+}
