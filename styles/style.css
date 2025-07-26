@@ -63,13 +63,15 @@
 }
 
 /* header styles */
-
+.header{
+    width: 1140px;
+}
 
 .header-body {
     display: flex;
     margin: 30px 150px 120px;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    /* align-items: center; */
 }
 
 .header ul {
@@ -185,18 +187,7 @@
     font-size: 1.38rem;
 }
 
-/* latest deal */
-.deal-title{
-        font-size: 3.13rem;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 120px;
-}
-.deal-description {
-    text-align: center;
-    font-size: 1.38rem;
-    margin-top: 16px;
-}
+
 
 /* plants lover styles*/
 .plant-lover {
