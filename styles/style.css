@@ -1,6 +1,6 @@
-* {
+/* * {
     margin: 0 auto;
-}
+} */
 
 /* shared styles */
 .flex {
@@ -31,11 +31,30 @@
     font-variation-settings:
         "wdth" 100;
 }
-.orange{
+
+.orange {
     color: #E95A08;
 }
-.gray-light{
+
+.gray-light {
     color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary {
+    background-color: #E95A08;
+    font-weight: 700;
+    border: none;
+    color: white;
+    padding: 19px 80px;
+    width: 100%;
+    transition-duration: 0.4s;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    border: 1px solid #E95A08;
+    color: #E95A08;
+    transform: scale(1.08);
 }
 
 /* header styles */
@@ -55,12 +74,12 @@
 .header ul li {
 
     list-style: none;
-    
+
 }
 
 .header ul li a {
     text-decoration: none;
-    
+
     margin-right: 48px;
 }
 
@@ -75,76 +94,135 @@
     width: 2.8%;
     margin-right: 11px;
 }
-.nav-color{
+
+.nav-color {
     color: #8987A1;
 }
 
 /* hero section styles */
 
-
-
-.hero-title{
-    font-size: 4rem;
-    font-weight: bold;
+.hero{
+    justify-content: space-between;
     
 }
-.hero-writing{
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: bold;
+
+}
+
+.hero-writing {
     width: 570px;
 }
-.hero-description{
+
+.hero-description {
     font-size: 22px;
     padding-bottom: 0px;
 }
-.hero-img{
+
+.hero-img {
     margin-top: 106px;
 }
-.hero-writing{
+
+.hero-writing {
     margin-top: 162px;
 }
 
 
 /* our plants styles */
-.plants-title{
+.plants-title {
     font-size: 3.13rem;
     font-weight: bold;
     text-align: center;
     margin-top: 120px;
 }
-.plants-description{
+
+.plants-description {
     text-align: center;
     font-size: 1.38rem;
     margin-top: 16px;
 }
 
+/* Our plants styles */
+.p-card {
+    width: 100%;
 
+}
+
+.p-card img {
+    width: 100%;
+}
+
+
+.plant-cards {
+    margin: 49px 150px 210px 150px ;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 30px;
+    column-gap: 20px;
+}
+
+.card-writings {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card-writings h5 {
+    margin-bottom: 20px;
+    font-size: 1.38rem;
+    font-weight: 500;
+}
+
+.card-writings h4 {
+    font-weight: bold;
+    font-size: 1.38rem;
+}
 
 
 /* responsive styles */
 @media screen and (max-width: 576px) {
-    *{
+    * {
         margin: 0 auto;
     }
-    .hero{
+
+    .hero {
         flex-direction: column-reverse;
         margin-left: 0px;
         margin-right: 0px;
     }
-    .hero-img{
+
+    .hero-img {
         margin: 0 auto;
     }
-    .header-body{
+
+    .header-body {
         width: 361px;
     }
-    .nav-titles{
+
+    .nav-titles {
         display: none;
     }
-    .nav-bar{
+
+    .nav-bar {
         justify-content: space-between;
     }
+
     .cart-img {
-    /* width: 24px; */
-    /* height: 24px; */
-    width: 18%;
-    margin-right: 11px;
-}
+        /* width: 24px; */
+        /* height: 24px; */
+        width: 18%;
+        margin-right: 11px;
+    }
+    .our-plants{
+        /* align-items: center; */
+        width: 100%;
+    }
+    .plant-cards{
+        grid-template-columns: repeat(2,1fr);
+                margin-left: 0px;
+        margin-right: 0px;
+        /* align-items: center; */
+    }
 }
