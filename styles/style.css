@@ -1,6 +1,6 @@
-/* * {
+* {
     margin: 0 auto;
-} */
+}
 
 /* shared styles */
 .flex {
@@ -47,7 +47,7 @@
 
 .btn-primary {
     background-color: #E95A08;
-    font-weight: 700;
+    font-weight: 500;
     border: none;
     color: white;
     padding: 19px 80px;
@@ -214,11 +214,67 @@
     /* width: 100%; */
     width: 250px;
     height: 250px;
-    top: 2360px;
+    top: 2200px;
     left: 760px;
     filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
 
 
+}
+
+/* Join section styles */
+.join-section {
+    margin: 0 auto;
+    margin-top: 120px;
+    max-width: 100%;
+    background-image: url(../assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-title {
+    font-size: 3.13rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top: 199px;
+    margin-bottom: 23px;
+}
+
+.email {
+    border: none;
+    border-radius: none;
+    max-width: 130px;
+    margin-bottom: 193px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+
+input[type=text] {
+    border: none;
+    border-radius: none;
+    padding: 20px;
+    /* height: 50px; */
+    width: 644px;
+}
+
+.subscribe {
+    background-color: #E95A08;
+    font-weight: 500;
+    border: none;
+    color: white;
+    padding: 19px 54px;
+    width: 100%;
+    transition-duration: 0.4s;
+}
+
+.subscribe:hover {
+    background-color: white;
+    border: 1px solid #E95A08;
+    color: #E95A08;
+    transform: scale(1.08);
 }
 
 /* responsive styles */
@@ -291,4 +347,12 @@
         font-size: 0.88rem;
     }
 
+    /* join section */
+
+    .input-section{
+        max-width: 321px;
+    }
+    input[type=text] {
+        width: 218px;
+    }
 }
